@@ -14,11 +14,11 @@ class Clogin extends CI_Controller
 public function index(){
 	// $data['mensaje'] ="";
 	// $this->load->view('vlogin',$data);
-	$this->load->view('form-1');
-	// $this->load->view('layout/header');
-		// $this->load->view('layout/menupac');
+	// $this->load->view('form-1');
+	$this->load->view('layout/header');
+		$this->load->view('layout/menupac');
 		// $this->load->view('vdashboard');
-		// $this->load->view('layout/footer');
+		$this->load->view('layout/footer');
 }
 public function ingresar(){
 	$email = $this->input->post('email');
